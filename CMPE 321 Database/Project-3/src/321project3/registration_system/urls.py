@@ -1,0 +1,52 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+
+    path('dbm_login', views.dbm_login, name="dbm_login"),
+    path('dbm_home', views.dbm_home, name="dbm_home"),
+    path('dbm_add_user', views.dbm_add_user, name="dbm_add_user"),
+    path('dbm_add_instructor', views.dbm_add_instructor, name="dbm_add_instructor"),
+    path('dbm_add_student', views.dbm_add_student, name="dbm_add_student"),
+    path('dbm_delete_student', views.dbm_delete_student_render, name="dbm_delete_student"),
+    path('dbm_delete_student_action', views.dbm_delete_student, name="dbm_delete_student_action"),
+    path('dbm_update_title', views.dbm_update_title_render, name="dbm_update_title"),
+    path('dbm_update_title_action', views.dbm_update_title, name="dbm_update_title_action"),
+    path('dbm_list_students', views.dbm_list_students, name="dbm_list_students"),
+    path('dbm_list_instructors', views.dbm_list_instructors, name="dbm_list_instructors"),
+    path('dbm_view_grades', views.dbm_view_grades_render, name="dbm_view_grades"),
+    path('dbm_view_grades_action', views.dbm_view_grades, name="dbm_view_grades_action"),
+    path('dbm_view_courses', views.dbm_view_courses_render, name="dbm_view_courses"),
+    path('dbm_view_courses_action', views.dbm_view_courses, name="dbm_view_courses_action"),
+    path('dbm_grade_average', views.dbm_grade_average_render, name="dbm_grade_average"),
+    path('dbm_grade_average_action', views.dbm_grade_average, name="dbm_grade_average_action"),
+
+    path('instructor_login', views.instructor_login, name="instructor_login"),
+    path('instructor_home', views.instructor_home, name="instructor_home"),
+    path('instructor_view_classroom', views.instructor_view_classroom_render, name="instructor_view_classroom"),
+    path('instructor_view_classroom_action', views.instructor_view_classroom, name="instructor_view_classroom_action"),
+    path('instructor_add_course', views.instructor_add_course_render, name="instructor_add_course"),
+    path('instructor_add_course_action', views.instructor_add_course, name="instructor_add_course_action"),
+    path('instructor_add_pre', views.instructor_add_pre_render, name="instructor_add_pre"),
+    path('instructor_add_pre_action', views.instructor_add_pre, name="instructor_add_pre_action"),
+    path('instructor_given_courses', views.instructor_given_courses, name="instructor_given_courses"),
+    path('instructor_view_students', views.instructor_view_students_render, name="instructor_view_students"),
+    path('instructor_view_students_action', views.instructor_view_students, name="instructor_view_students_action"),
+    path('instructor_update_course', views.instructor_update_course_render, name="instructor_update_course"),
+    path('instructor_update_course_action', views.instructor_update_course, name="instructor_update_course_action"),
+    path('instructor_give_grade', views.instructor_give_grade_render, name="instructor_give_grade"),
+    path('instructor_give_grade_action', views.instructor_give_grade, name="instructor_give_grade_action"),
+
+    path('student_login', views.student_login, name="student_login"),
+    path('student_home', views.student_home, name="student_home"),
+    path('student_list_courses', views.student_list_courses, name="student_list_courses"),
+    path('student_add_course', views.student_add_course_render, name="student_add_course"),
+    path('student_add_course_action', views.student_add_course, name="student_add_course_action"),
+    path('student_view_your_courses', views.student_view_your_courses, name="student_view_your_courses"),
+    path('student_search_course', views.student_search_course_render, name="student_search_course"),
+    path('student_search_course_action', views.student_search_course, name="student_search_course_action"),
+    path('student_filter_course', views.student_filter_course_render, name="student_filter_course"),
+    path('student_filter_course_action', views.student_filter_course, name="student_filter_course_action"),
+]

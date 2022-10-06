@@ -1,0 +1,15 @@
+use simpleboun;
+insert into classroom values(101,"South Campus",70);
+insert into classroom values(102,"South Campus",60);
+insert into classroom values(103,"South Campus",40);
+insert into classroom values(104,"South Campus",20);
+insert into classroom values(105,"South Campus",100);
+insert into classroom values(106,"South Campus",30);
+insert into classroom values(107,"South Campus",90);
+insert into classroom values(108,"South Campus",15);
+insert into classroom values(109,"South Campus",45);
+insert into classroom values(201,"North Campus",40);
+insert into classroom values(202,"North Campus",120);
+insert into classroom values(203,"North Campus",90);
+insert into classroom values(204,"North Campus",40);
+insert into classroom values(205,"North Campus",45);

@@ -1,0 +1,18 @@
+animal
+human
+kitunian
+animal
+human
+kitunian
+plant
+castely
+mircastely
+fybranite
+fybran
+sentoru
+bosentoru
+21 4 500 1000 8 25
+22 3 400 900 6 16
+23 1 200 400 6 3
+24 7 900 14000 8 41
+26 4 450 1150 8
